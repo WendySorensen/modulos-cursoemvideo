@@ -1,0 +1,18 @@
+        Nesse ele mostrou formatações mais complexas:
+
+        Colocar algo dentro de code faz com que ele arrume as coisas espaçadamente, o que deixa melhor ao colocarmos códigos como fizemos ali.
+        Porém, ao fazer isso, o navegador ainda irá remover os espaços e tals, para isso, ao colocarmos o <code> dentro de uma tag pre, ele manterá a estrutura, pois, dentro da tag pre, tudo que for digitado aparecerá exatamente igual na página.
+        
+        Dessa forma, esse código python que ele colocou ali ficará exatamente da forma correta que ele redigiu, isso serve para mostrarmos códigos de programação na nossa página.
+
+        Ele tbm ensinou que podemos usar tab para mover um código selecionado todo para frente, até aí ja sabia, mas ele tbm ensinou que ao usar SHIFT+Tab, da pra voltar o código, sem precisar voltar linha a linha como eu estava fazendo.
+        
+
+        Ele tbm ensinou a tag Q, que serve para usar UNICAMENTE qndo vamos descrever a frase ou citação de alguém. Isso adiciona aspas, mas aspas é apenas visual, e não significativo como ja dito antes.
+
+        Ele tbm ensinou sobre como fazer um bloco de citação, usando blockquote, e nessa tag ainda é possível por o parâmetro "cite" que podemos colar o link de onde veio a citação.
+
+        Tbm é possível adicionar algo como  abreviação, que ao botar o mouse em cima, ele mostra um popup que mostrará o que essa sigla significa.
+
+        Tbm por zueira ele ensinou a criar texto invertido com os values ltr e rtl, que é left to right e right to left.
+    

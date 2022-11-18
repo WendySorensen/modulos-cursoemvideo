@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você tbm pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no Youtube</a></p>
+
+    <h1>Usando Links Internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página.</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+    
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/pdfdeexemplo.pdf" download="pdfdeexemplo.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/pdfdeexemplo.7z" download="pdfdeexemplo.7z" type="application/zip">Baixar arquivo Zipado</a></li>
+    </ul>
+    <!--
+        INFORMAÇÕES CURTAS PRA GUARDAR:
+        
+        Links são ligações entre uma página e outra.
+        
+        Todo hiperlink é construído através de uma âncora no html, por isso, "a".
+        
+        Procurar mais sobre SEO futuramente, isso fará com que o google ache nosso site.
+
+        TAGS, PARÂMETROS E VALUES APRENDIDOS:
+
+        target="_blank" - Abre o site do link em outra janela, recomendado pois se não fizermos, a pessoa nunca mais volta ao site, ela segue em frente.
+
+        rel="external" - Rel significa relativo a, e basicamente diz pro navegador que é um link externo, e como ja aprendemos, é sempre bom deixar tudo bem explicado ao navegador pois o google da preferência a sites assim.
+
+        rel="next" - Diz ao navegador que é a próxima página
+
+        rel="prev" - Diz ao navegador que  é a página anterior
+
+        rel="nofollow" - Serve para dizer pro mecanismo de busca que você não da um aval pro conteúdo, necessariamente. Tem gente que pede que não seja nofollow.
+
+        target="_self" - È o mesmo que não usar o target blank, ele mantém na mesma janela.
+
+        ../ - volta uma página, ele tbm sugeriu aprendermos linux, mesmo que não usemos, pois os servidores onde ficam os sites são linux.
+
+        download - o parâmetro download diz ao navegador que esse arquivo é para ser baixado, porém, ele sozinho não funciona, ele precisa que seja especificado qual arquivo é, usando type
+
+        type="application/pdf" - isso diz ao navegador que o arquivo a ser baixado é um arquivo pdf, existe uma lista COMPLETA descrita no PDF desse capítulo sobre o que colocar de acordo com o tipo de arquivo que queremos que baixe.
+    -->
+</body>
+</html>

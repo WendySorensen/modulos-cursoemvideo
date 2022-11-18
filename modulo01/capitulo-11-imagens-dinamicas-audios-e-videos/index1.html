@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferente sou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        <p><a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo em MP</a></p>
+    </audio>
+    <!--
+        TAGS APRENDIDAS
+
+        picture - parece uma imagem, mas permite que criemos vários sources, é basicamente um "álbum", que podemos usar multiplos tamanhos como fizemos acima.
+
+        Começamos com a imagem maior, mas queremos que seja responsivo, então, dentro da tag picture colocamos um source:mediatype, e dentro desse source colocamos max-width, ou seja, em que tamanho ele mudará para a imagem menor e tbm o endereço da imagem a carregar, seguido da especificação do media type que nesse caso é png.
+
+        ATENÇÃO!!!! O source PRECISA ficar acima do outro, não abaixo, a ordem importa. Ou seja, nossa foto padrão é a grande, a de cima tem que ser a média e a de cima da média tem que ser a pequena, e assim por diante.
+
+
+
+        AUDIOS:
+
+        Bom, para por um áudio é simples, usa-se o a tag audio com um source, porém, só isso não é o bastante, precisa tbm do atributo controls para exibir os controles, o atributo autoplay fará com que o áudio execute assim que carregar a página, assim como visto abaixo:
+
+        <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+        
+        Porém, só isso não é o bastante, pois em alguns navegadores isso NÃO FUNCIONARÁ, depende mto.
+
+        Para isso, aprendemos a outra forma de adicionar um áudio.
+
+        No mesmo espírito das imagens, carregamos diversos arquivos, onde um irá carregar todos os formatos que eu disponibilizar, ele tbm colocou o preload no arquivo para só carregar os metadatas dos arquivos até que a pessoa clique em baixar.
+    -->
+</body>
+</html>
